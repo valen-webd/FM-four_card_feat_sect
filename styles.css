@@ -6,7 +6,8 @@
     --blue: hsl(212, 86%, 64%);
     --grey-500: hsl(234, 12%, 34%);
     --grey-400: hsl(212, 6%, 44%);
-    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(212, 6%, 88%);
+    --theme: hsl(0, 0%, 98%);
 }
 
 * {
@@ -21,7 +22,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     color: var(--grey-500);
-    background-color: var(--white);
+    background-color: var(--theme);
 }
 
 main {
@@ -52,8 +53,10 @@ main>p {
 
 .cards {
     display: grid;
-    gap: 1rem;
-    justify-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
     align-items: center;
 }
 
@@ -63,11 +66,11 @@ main>p {
 
 .cards>section {
     padding: 1.5rem;
-    box-shadow: 0px 4px 16px var(--grey-400);
-    margin-bottom: 2rem;
+    box-shadow: 0px 8px 16px var(--light-grey);
     border-radius: 8px;
     text-align: end;
     max-width: 380px;
+    background-color: white;
 }
 
 .cards>section>h2,
@@ -99,6 +102,7 @@ main>p {
 footer {
     font-size: 11px;
     text-align: center;
+    padding: 1rem;
 }
 
 footer a {
@@ -106,7 +110,7 @@ footer a {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .h1,
     .h1-main {
         font-size: 2rem;
